@@ -8,6 +8,10 @@ import Home from 'Home';
 import Page2 from 'Page2';
 import Page3 from 'Page3';
 
+require('style!css!semantic-ui-css/semantic.min.css');
+// require('style!css!foundation-sites/dist/foundation.min.css');
+// $(document).foundation();
+
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
