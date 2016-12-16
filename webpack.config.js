@@ -33,7 +33,8 @@ module.exports = {
       Page3: 'app/components/routes/Page3.jsx',
       Form1: 'app/components/routes/components/Form1.jsx',
       Form1Message: 'app/components/routes/components/Form1Message.jsx',
-      Fetcher: 'app/api/Fetcher.jsx'
+      Fetcher: 'app/api/Fetcher.jsx',
+      ModalStatic: 'app/components/common/Modal.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },
