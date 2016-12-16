@@ -14,15 +14,16 @@ export default class ModalStatic extends Component {
   }
 
   render(){
+    let { open, onClose, titleIcon, title, message, onClick, buttonText } = this.props;
     return (
-      <Modal open={this.props.open} onClose={this.props.onClose}>
-        <Header icon={this.props.titleIcon || 'announcement'} content={this.props.title} />
+      <Modal open={open} onClose={onClose}>
+        <Header icon={titleIcon || 'announcement'} content={title} />
         <Modal.Content>
-          {this.props.message}
+          {message}
         </Modal.Content>
         <Modal.Actions>
-          <Button color='green' onClick={this.props.onClick}>
-            <Icon name='checkmark' /> {this.props.buttonText}
+          <Button color='green' onClick={onClick}>
+            <Icon name='checkmark' /> {buttonText}
           </Button>
         </Modal.Actions>
       </Modal>
