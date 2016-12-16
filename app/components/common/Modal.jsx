@@ -16,9 +16,9 @@ export default class ModalStatic extends Component {
   render(){
     return (
       <Modal open={this.props.open} onClose={this.props.onClose}>
-        <Header icon='archive' content={this.props.title} />
+        <Header icon={this.props.titleIcon || 'announcement'} content={this.props.title} />
         <Modal.Content>
-          <p>{this.props.message}</p>
+          {this.props.message}
         </Modal.Content>
         <Modal.Actions>
           <Button color='green' onClick={this.props.onClick}>

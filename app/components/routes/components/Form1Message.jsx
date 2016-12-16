@@ -4,8 +4,8 @@ import React from 'react';
 
 export default ({location,temp}) => {
   return (
-    <div>
+    <p>
       It's {temp} in {location} right now!
-    </div>
+    </p>
   );
 }

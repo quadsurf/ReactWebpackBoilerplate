@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import ModalStatic from 'ModalStatic';
-import { Button } from 'semantic-ui-react'
+import { Button } from 'semantic-ui-react';
 
 export default class Page2 extends Component {
   constructor(props){
@@ -32,6 +32,7 @@ export default class Page2 extends Component {
         <div>
           <ModalStatic
             title="Title"
+            titleIcon="payment" 
             message="Message"
             open={open}
             onClick={close}

@@ -16,8 +16,8 @@ export default {
         }
       )
       .catch(
-        (res) => {
-          throw new Error(res.data.message);
+        (err) => {
+          throw new Error(err.response.data.message);
         }
       );
   },
